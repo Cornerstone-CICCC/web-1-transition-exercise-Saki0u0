@@ -49,8 +49,27 @@
   }
 }
 
-.progress{
-  width: 4%;
+.box3{
+  width: 400px;
   height: 50px;
-  background-color: gray;
+  background-color: lightgray;
+  border-radius: 5px;
+  position: relative;
+
+  .box4 {
+    width: 400px;
+    height: 50px;
+    background-color: blue;
+    animation: fillAnimation 3s linear infinite;
+  }
 }
+
+@keyframes fillAnimation{
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+

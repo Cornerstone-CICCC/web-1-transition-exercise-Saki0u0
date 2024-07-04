@@ -10,11 +10,6 @@
   opacity: 0;
 }
 
-.container {
-  width: 100%;
-  max-height: 100%;
-}
-
 .box2 {
   background-color: yellow;
   width: 100px;
@@ -56,22 +51,23 @@
 .box3 {
   width: 400px;
   height: 50px;
-  background-color: gray;
-  animation-name: box3;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  text-align: center;
+  background-color: lightgray;
+  border-radius: 5px;
   position: relative;
 }
+.box3 .box4 {
+  width: 400px;
+  height: 50px;
+  background-color: blue;
+  animation: fillAnimation 3s linear infinite;
+}
 
-@keyframes box3 {
+@keyframes fillAnimation {
   from {
-    transition: transform(0);
-    background-color: gleen;
+    width: 0px;
   }
   to {
-    transition: transformX(100%);
-    background-color: gleen;
+    width: 100%;
   }
 }
 
